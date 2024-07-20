@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Der Fuchs und die Biene</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Der Fuchs und die Biene</h1>
+        <div class="video-container">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/mVxtbgwdJ5I" frameborder="0" allowfullscreen></iframe>
+        </div>
+        </div>
+        <div class="text-block">
+            <h2>Die Story</h2>
+            <p>"In einem sterbenden Wald stößt ein einheimischer Fuchs auf ein Bienennest. 
+                Er lernt eine Biene kennen und erzählt ihr von einem Hein, der noch unberührt ist. 
+                Für viele ehemalige Waldbewohner ist es ein neues zuhause geworden. 
+                Gegenseitig sich helfend, machen sich Biene und Fuchs auf den Weg zu ihrem neuen Heim. 
+                Dabei sehen sie die Zerstörungen und Probleme ihrer Heimat." 
+                <br> <br>
+            </p>
+            <div class="image-slider-container">
+                <div class="image-slider" id="slider1">
+                    <img src="image1.jpg" alt="Bild 1" class="active" onclick="toggleFullscreenImage(this)">
+                    <img src="image2.jpg" alt="Bild 2" onclick="toggleFullscreenImage(this)">
+                    <img src="image3.jpg" alt="Bild 3" onclick="toggleFullscreenImage(this)">
+                </div>
+                <div class="slider-controls">
+                    <button id="prevBtn1" onclick="prevSlide('slider1')"><</button>
+                    <button id="nextBtn1" onclick="nextSlide('slider1')">></button>
+                </div>
+            </div>
+        </div>
+        <div class="text-block">
+            <h2>Medium & Prototypisierungen</h2>
+            <h3>Hintergründe - Procreate</h3>
+            <p>Alle Hintergründe wurden händisch gezeichnet. Die Technik hier war es, auf mehreren 
+                Layern angepasst an die Entfertung des Vordergrunds zu zeichen, um so diese nutzen 
+                zu können, um einen Paralax-Effekt zu erzeugen.
+            </p>
+            <h3>Charaktere - Adobe Character Animator</h3>
+            <p>Für die Charakteranimation haben wir den Adobe Character Animator genutzt. Hierfür mussten 
+                zuvor alle Teile der Charaktere wie bspw. Gliedmaßen, Augen, Mund oder auch Ohren einzeln in Procreate
+                gezeichnet werden, damit diese dann als Quelle für das Rigging genutzt werden konnten.
+                <br> Dort wurden dann alle Teile einem Rig zugewiesen und dann beim einsprechen direkt mit aufgenommen,
+                um diese in unsere Hintergrund-Paralax Ebenen einsetzen zu können. 
+                <br> <br>
+            </p>
+            <h3>Schnitt und Vertonung - DaVinci Resolve</h3>
+            <p>Für den Schnitt und die Vertonung bzw den Audio-Schnitt haben wir uns für DaVinci Resolve entschieden, da wir die 
+                Software bereits kannten.
+                Für die Vertonung selbst haben wir einfach die Audio in zusammenarbeit mit dem Character Animator aufgenommen und 
+                diese dann hinzugefügt. Soundeffekte sind dann zusätzlich für das Ambiente von öffentlichen Datenbanken hinzugeführt 
+                worden.
+            </p>
+            <br>
+            <div class="image-slider-container">
+                <div class="image-slider" id="slider2">
+                    <img src="./Bilder/Wald_Trocken_1.jpg" alt="Bild 1" class="active" onclick="toggleFullscreenImage(this)">
+                    <img src="./Bilder/Wald_Trocken_3.jpg" alt="Bild 2" onclick="toggleFullscreenImage(this)">
+                    <img src="./Bilder/Wald_Trocken_4.jpg" alt="Bild 3" onclick="toggleFullscreenImage(this)">
+                    <img src="./Bilder/Fluss.jpg" alt="Bild 4" onclick="toggleFullscreenImage(this)">
+                    <img src="./Bilder/Feld1.png" alt="Bild 5" onclick="toggleFullscreenImage(this)">
+                    <img src="./Bilder/Feld2.png" alt="Bild 5" onclick="toggleFullscreenImage(this)">
+                    <img src="./Bilder/Straße.jpg" alt="Bild 6" onclick="toggleFullscreenImage(this)">
+                    <img src="./Bilder/Straße2.jpg" alt="Bild 7" onclick="toggleFullscreenImage(this)">
+                    <img src="./Bilder/Straße3.jpg" alt="Bild 8" onclick="toggleFullscreenImage(this)">
+                    <img src="./Bilder/Wald_Gesund_.jpg" alt="Bild 9" onclick="toggleFullscreenImage(this)">
+                    <img src="./Bilder/Wald_Gesund_2.jpg" alt="Bild 10" onclick="toggleFullscreenImage(this)">
+                    <img src="./Bilder/Wald_Gesund_3.jpg" alt="Bild 11" onclick="toggleFullscreenImage(this)">
+                    <img src="./Bilder/Wald_Gesund_3 1.jpg" alt="Bild 12" onclick="toggleFullscreenImage(this)">
+                    <img src="./Bilder/DaVinci01.png" alt="Bild 12" onclick="toggleFullscreenImage(this)">
+                    <img src="./Bilder/DaVinci02.png" alt="Bild 12" onclick="toggleFullscreenImage(this)">
+                </div>
+                <div class="slider-controls">
+                    <button id="prevBtn2" onclick="prevSlide('slider2')"><</button>
+                    <button id="nextBtn2" onclick="nextSlide('slider2')">></button>
+                </div>
+            </div>
+        </div>
+        <div class="text-block">
+            <h2>Referenzen und Inspirationen</h2>
+            <h3>"Der Junge, der Maulwurf, der Fuchs und das Pferd - Charlie Mackesy"</h3>
+            <p>Wir wollten eine Erzählweise einer Geschichte, die auf Kinder ausgelegt aber 
+                auch von jungen Erwachsenen gerne angesehen wird. Die ernsthaftigkeit des Themas 
+                Umwelt soll subtil erzählt werden. Hier soll es nicht um Schuldzuweisungen gehen,
+                sondern lediglich eine darstellung des "Ist" gezeigt werden. Auch soll die 
+                Wichtigkeit von bspw. Naturschutzgebieten deutlich gemacht werden. 
+                <br> Sowohl Zeichnerisch als auch Narrativ ist hier "Der Junge, der Maulwurf, der Fuchs und das Pferd" 
+                von Charlie Mackesy eine sehr große Inspiration für unser Projekt gewesen.
+            </p>
+            <br> <br>
+            <div class="image-slider-container">
+                <div class="image-slider" id="slider3">
+                    <img src="./Bilder/Inspo1.jpeg" alt="Bild 1" onclick="toggleFullscreenImage(this)">
+                </div>
+            </div>
+        </div>
+        <div class="text-block">
+            <h2>Herausforderung</h2>
+            <h3>Charakter Animation</h3>
+            <p> Rigging: <br>
+                Das Rigging selbst zu verstehen war die erste Herausforderung. Das größte Problem war,
+                dass dieses nicht immer ganz logisch nachzuvollziehen war, vor allem wenn man dieses wirklich zum ersten mal
+                anwendet und umsetzt. <br><br>
+                Technische Umsetzung: <br>
+                Das zweite Problem war die technische Umsetzung. Es gab entsprechende Anleitungen und Tutorials, allerdings waren
+                diese nie einstimmig. Oft fehlte bei diesen der der logische Zusammenhang warum man 
+                etwas machen muss oder was die Funktion bestimmer Aktionen ist.
+            </p>
+            <h3>Kindergerechte Sprache</h3>
+            <p>Die Kindergerechte Sprache war Anfangs eine Herausforderung. Das erste Drehbruch bestand aus aus komplizierten und langen Schachtelsätzen,
+                die fast alle abgeändert werden mussten. Uns war auch wichtig nicht zu viel zu sagen,
+                und mehr zeigen zu können, daher wurde bspw. auch die Erzählerstimme gestrichen. 
+            </p>
+            <br> <br>
+            <div class="image-slider-container">
+                <div class="image-slider" id="slider4">
+                    <img src="./Bilder/Character1.png" alt="Bild 1" class="active" onclick="toggleFullscreenImage(this)">
+                    <img src="./Bilder/Character2.png" alt="Bild 2" onclick="toggleFullscreenImage(this)">
+                </div>
+                <div class="slider-controls">
+                    <button id="prevBtn4" onclick="prevSlide('slider4')"><</button>
+                    <button id="nextBtn4" onclick="nextSlide('slider4')">></button>
+                </div>
+            </div>
+        </div>
+        <div class="text-block">
+            <h2>Zukünftige Ausbaustufen</h2>
+            <p>Gerne würden wir dieses Projekt in Patrnerschaft mit einem Naturverein präsentieren. 
+                Der Kurzfilm wäre Ideal für Events und gut als Kinderbuch umsetzbar. <br>
+                Alternative wäre es möglich, wie zu begin geplant eine art Kurz-Serie daraus zu machen mit mehreren kurzen Folgen
+                für Social-Media im "Short-Form-Content" Format. 
+            </p>
+            <br> <br>
+        </div>
+        <div class="video-slider-container">
+            <h2>Behind the Scenes</h2>
+            <div class="video-slider" id="videoSlider">
+                <video controls class="active">
+                    <source src="./Videos/Biene.mp4" type="video/mp4">
+                    Ihr Browser unterstützt das Video-Tag nicht.
+                </video>
+                <video controls>
+                    <source src="./Videos/Fuchs1.mp4" type="video/mp4">
+                    Ihr Browser unterstützt das Video-Tag nicht.
+                </video>
+                <video controls>
+                    <source src="./Videos/Fuchs2.mp4" type="video/mp4">
+                    Ihr Browser unterstützt das Video-Tag nicht.
+                </video>
+            </div>
+            <div class="slider-controls">
+                <button id="prevVideoBtn" onclick="prevVideo()"><</button>
+                <button id="nextVideoBtn" onclick="nextVideo()">></button>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="column">
+                <img src="./Bilder/Madi.png" alt="Madi" class="avatar">
+                <p>Madeleine Hansen<br>Matrikelnummer: 272014</p>
+            </div>
+            <div class="column">
+                <img src="./Bilder/Laura.jpg" alt="Laura" class="avatar">
+                <p>Laura Kupferschmid<br>Matrikelnummer: 272613</p>
+            </div>
+            <div class="column">
+                <img src="./Bilder/Ameno.jpg" alt="Armina" class="avatar">
+                <p>Armina Music<br>Matrikelnummer: 268021</p>
+            </div>
+        </div>
+    </div>
+    <div id="fullscreenModal" class="fullscreen-modal" onclick="closeFullscreen()">
+        <img id="fullscreenImage" alt="Vollbild">
+    </div>
+</body>
+</html>
